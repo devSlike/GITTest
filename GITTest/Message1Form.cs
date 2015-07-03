@@ -27,5 +27,10 @@ namespace GITTest
             if (MessageBox.Show("Do you want close the Message1?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
                 e.Cancel = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label1.Text = textBox1.Text;
+        }
     }
 }
