@@ -21,5 +21,11 @@ namespace GITTest
         {
             Close();
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Do you want close the program?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+                e.Cancel = true;
+        }
     }
 }
