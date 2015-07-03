@@ -27,5 +27,10 @@ namespace GITTest
             if (MessageBox.Show("Do you want close the program?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
                 e.Cancel = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Message 1", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
