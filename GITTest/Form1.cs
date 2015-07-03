@@ -30,7 +30,10 @@ namespace GITTest
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Message 1", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            using (var messageForm = new Message1Form())
+            {
+                messageForm.ShowDialog();
+            }
         }
     }
 }
